@@ -1,0 +1,43 @@
+{
+  "name": "orders-products-next-app-router",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.mjs",
+    "lint": "next lint",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "latest",
+    "axios": "latest",
+    "bootstrap": "latest",
+    "bootstrap-icons": "latest",
+    "framer-motion": "latest",
+    "i18next": "latest",
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "react-i18next": "latest",
+    "react-redux": "latest",
+    "socket.io": "latest",
+    "socket.io-client": "latest"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@vitejs/plugin-react": "latest",
+    "@vitest/utils": "^4.1.7",
+    "eslint": "latest",
+    "eslint-config-next": "16.2.6",
+    "jsdom": "latest",
+    "typescript": "latest",
+    "vitest": "latest"
+  }
+}
