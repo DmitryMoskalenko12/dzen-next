@@ -1,0 +1,16 @@
+.products-wrapper {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.products-table {
+  min-width: 1780px;
+  display: grid;
+  gap: 8px;
+}
+
+@media (max-width: 1200px) {
+  .products-table {
+    overflow: auto;
+  }
+}

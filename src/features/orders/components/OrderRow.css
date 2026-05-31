@@ -1,0 +1,89 @@
+.order-card {
+  height: 82px;
+  background: #fff;
+  border: 1px solid #c7d5dc;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: minmax(450px, 1fr) 150px 210px 220px 42px;
+  align-items: center;
+  padding: 0 36px;
+  color: var(--blue);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.order-card--compact {
+  grid-template-columns: 155px 150px 1fr 0px;
+  padding: 0 0 0 38px;
+  position: relative;
+}
+
+.order-card__title {
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: var(--blue);
+}
+
+.order-card__count {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  column-gap: 12px;
+}
+
+.order-card__count-value {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.order-card__count-label {
+  grid-column: 2;
+  color: var(--muted);
+}
+
+.order-card__icon {
+  grid-row: 1/3;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.order-card__date-small,
+.order-card__sum-small {
+  display: block;
+  color: #8da5af;
+  font-size: 12px;
+}
+
+.order-card__date-main,
+.order-card__sum-main {
+  font-size: 16px;
+}
+
+.order-card__arrow {
+  height: 100%;
+  background: #d4e0e5;
+  color: #fff;
+  font-size: 54px;
+  display: grid;
+  place-items: center;
+}
+
+.order-card__delete {
+  border: 0;
+  background: transparent;
+  color: #8ba5b0;
+}
+
+@media (max-width: 1200px) {
+  .order-card {
+    grid-template-columns: 1fr 130px 180px 160px 36px;
+  }
+  
+  .order-card--compact {
+    grid-template-columns: 70px 120px 1fr 44px;
+  }
+}

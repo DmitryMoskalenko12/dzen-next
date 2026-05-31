@@ -1,0 +1,30 @@
+.product-form {
+  position: relative;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.product-form__input,
+.product-form__select {
+  height: 34px;
+  border: 1px solid #c7d5dc;
+  border-radius: 4px;
+  padding: 0 12px;
+}
+
+.product-form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 34px;
+  white-space: nowrap;
+}
+
+.product-form__error {
+  position: absolute;
+  top: 31px;
+  color: #e6334f;
+  align-self: center;
+}

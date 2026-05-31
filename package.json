@@ -1,12 +1,12 @@
 {
-  "name": "orders-products-next-app-router",
+  "name": "dzen-next",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "node server.mjs",
     "build": "next build",
-    "start": "NODE_ENV=production node server.mjs",
+    "start": "cross-env NODE_ENV=production node server.mjs",
     "lint": "next lint",
     "test": "vitest run",
     "test:watch": "vitest"
@@ -16,6 +16,7 @@
     "axios": "latest",
     "bootstrap": "latest",
     "bootstrap-icons": "latest",
+    "cross-env": "^10.1.0",
     "framer-motion": "latest",
     "i18next": "latest",
     "next": "16.2.6",

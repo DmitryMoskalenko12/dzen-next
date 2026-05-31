@@ -1,0 +1,27 @@
+.products-filters {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  margin-bottom: 44px;
+}
+
+.products-filters__title {
+  font-size: 30px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.products-filters__label {
+  color: #8aa2ad;
+  font-size: 12px;
+}
+
+.products-filters__select {
+  margin-left: 10px;
+  width: 235px;
+  height: 30px;
+  border: 1px solid #c7d5dc;
+  border-radius: 4px;
+  color: var(--dark);
+  font-weight: 700;
+}
