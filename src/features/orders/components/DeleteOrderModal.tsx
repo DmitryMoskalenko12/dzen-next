@@ -8,7 +8,7 @@ import type { Order } from "@/types";
 import AppButton from "@/shared/ui/AppButton";
 import { Product } from "@/types";
 
- const DeleteOrderModal = ({ order }: { order: Order }) => {
+const DeleteOrderModal = ({ order }: { order: Order }) => {
   const dispatch = useAppDispatch();
   const products = order.products;
   const { t } = useTranslation();
@@ -59,7 +59,7 @@ import { Product } from "@/types";
           : null}
         <footer className="delete-modal__footer">
           <AppButton
-            variant="link"
+            variant="light"
             className="delete-modal__cancel"
             onClick={() => dispatch(cancelDelete())}
           >
@@ -77,6 +77,6 @@ import { Product } from "@/types";
       </motion.div>
     </motion.div>
   );
-}
+};
 
 export default DeleteOrderModal;

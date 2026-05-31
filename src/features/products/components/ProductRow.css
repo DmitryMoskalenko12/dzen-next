@@ -58,10 +58,16 @@
 
 .product-row__date-label {
   font-size: 10px;
+  margin-right: 5px;
 }
 
 .product-row__delete {
   border: 0;
   background: transparent;
   color: #8ba5b0;
+}
+
+.product-row__labelValueWrapper {
+  display: flex;
+  align-items: center;
 }

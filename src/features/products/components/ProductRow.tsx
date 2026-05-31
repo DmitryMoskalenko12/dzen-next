@@ -34,15 +34,18 @@ const ProductRow = ({
         {product.isNew ? t("free") : t("repair")}
       </span>
       <div className="product-row__date">
-        <small className="product-row__date-label">с</small>{" "}
-        <span className="product-row__date-value">
-          {formatShort(product.guarantee.start)} / 2017
-        </span>
-        <br className="product-row__date-break" />
-        <small className="product-row__date-label">по</small>{" "}
-        <span className="product-row__date-value">
-          {formatShort(product.guarantee.end)} / 2025
-        </span>
+        <div className="product-row__labelValueWrapper">
+          <small className="product-row__date-label">с</small>{" "}
+          <span className="product-row__date-value">
+            {formatShort(product.guarantee.start)} / 2017
+          </span>
+        </div>
+        <div className="product-row__labelValueWrapper">
+          <small className="product-row__date-label">по</small>{" "}
+          <span className="product-row__date-value">
+            {formatShort(product.guarantee.end)} / 2025
+          </span>
+        </div>
       </div>
       <span className="product-row__state">
         {product.isNew ? "новый" : "Б / У"}
@@ -54,7 +57,6 @@ const ProductRow = ({
           )}{" "}
           $
         </small>
-        <br className="product-row__price-break" />
         <span className="product-row__price-main">
           {money(
             product.price.find((item) => item.symbol === "UAH")?.value || 0,
@@ -71,7 +73,6 @@ const ProductRow = ({
         <small className="product-row__date-label">
           {formatShort(product.date)}
         </small>
-        <br className="product-row__date-break" />
         <span className="product-row__date-value">
           {formatLong(product.date)}
         </span>
@@ -83,6 +84,6 @@ const ProductRow = ({
       />
     </div>
   );
-}
+};
 
 export default ProductRow;
