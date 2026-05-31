@@ -4,7 +4,7 @@
 
 .orders-page__content {
   display: grid;
-  grid-template-columns: minmax(360px, 420px) 1fr;
+  grid-template-columns: 1fr;
   gap: 24px;
   align-items: start;
 }

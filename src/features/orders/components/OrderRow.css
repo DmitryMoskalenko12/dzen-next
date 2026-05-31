@@ -19,6 +19,10 @@
 }
 
 .order-card__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 500px;
   font-size: 22px;
   letter-spacing: 1px;
   color: var(--blue);

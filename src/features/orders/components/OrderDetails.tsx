@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { closeOrder } from "../ordersSlice";
 import { useAppDispatch } from "@/app/hooks";
@@ -28,7 +28,7 @@ const OrderDetails = ({ order }: { order: Order }) => {
         className="order-details__add"
         icon="bi-plus-circle-fill"
       >
-        <span className="order-details__add-text">{t("addProduct")}</span>
+        <Link href="/products" className="order-details__add-text">{t("addProduct")}</Link>
       </AppButton>
       <div className="order-details__list">
         {order.products.map((product) => (

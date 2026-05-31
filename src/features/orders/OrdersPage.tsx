@@ -51,7 +51,7 @@ import "./OrdersPage.css";
           </AnimatePresence>
         </div>
       </LayoutGroup>
-      <AnimatePresence mode="wait" initial={false}>
+      <AnimatePresence>
         {del && <DeleteOrderModal key={del.id} order={del} />}
       </AnimatePresence>
     </div>
